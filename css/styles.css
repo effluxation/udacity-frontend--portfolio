@@ -1,0 +1,79 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
+hr {
+	border-width: 3px;
+	border-color: #b3b3b3;
+}
+
+a {
+	color: #333;
+}
+
+a:visited, a:link, a:active {
+	color: #333;
+}
+
+a:hover {
+	color: #b3b3b3;
+}
+
+article {
+	/*border: 1px solid #000;
+	padding: 4px;*/
+	margin-bottom: 10px;
+}
+
+.main {
+	margin-bottom: 15px;
+}
+
+.text-muted {
+	color: #b3b3b3;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+.title-super {
+	font-size: 55px;
+}
+
+#logo {
+	max-width: 140px;
+	padding-left: 5%;
+}
+
+.vertical-center {
+  min-height: 20%;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+}
+
+
+/*FOOTER*/
+
+footer {
+	margin: 2rem 0;
+}
+
+[class*="brandico-"]:before {
+  	font-family: 'brandico', sans-serif;
+  	font-size: 4rem;
+  	padding: 0 10px;
+}
+
+[class*="entypo-"]:before {
+  	font-family: 'entypo', sans-serif;
+  	font-size: 4rem;
+  	padding: 0 10px;
+}
+
+[class*="brandico-"]:link, [class*="entypo-"]:link {
+	text-decoration: none;
+}
+
