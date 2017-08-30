@@ -123,15 +123,21 @@ module.exports = function (grunt) {
       }
     },
 
-    // responsive_images_extender: {
-    //   front: {
+    responsive_images_extender: {
+      front: {
+        options: {},
+        files: [{
+          expand: true,
+          src: ['index.html']
+          dest: 'build/'
+        }]
+      },
+      // featured: {
+      //   options: {},
+      //   files: [{}]
+      // }
 
-    //   },
-    //   featured: {
-
-    //   }
-
-    // },
+    },
 
     watch: {
       options: {
