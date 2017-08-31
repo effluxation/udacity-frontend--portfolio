@@ -12,6 +12,21 @@ module.exports = function (grunt) {
       files: ['index.html']
     },
 
+    postcss: {
+      options: {
+        map: {
+          inline: false,
+          annotation: 'temp/css/maps'
+        },
+        processors: [
+          require('autoprefixer')({browsers: 'last 2 versions'})
+          ]
+      },
+      dist: {
+        src: 'css/styles.css'
+      }
+    },
+
     responsive_images: {
       front: {
         options: {
