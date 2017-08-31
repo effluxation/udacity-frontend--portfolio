@@ -81,7 +81,7 @@ module.exports = function (grunt) {
           },
           {
           name: 'xs',
-          width: 531,
+          width: 550,
           quality: 85
           },
           {
@@ -103,7 +103,7 @@ module.exports = function (grunt) {
           },
           {
           name: 'xs',
-          width: 1069,
+          width: 1100,
           quality: 85,
           suffix: '_2x'
           },
@@ -124,16 +124,45 @@ module.exports = function (grunt) {
     },
 
     responsive_images_extender: {
-      front: {
+      task: {
         options: {
           srcAttribute: 'smallest',
-          // sizes: [{
-          //   selector: '.front img',
-          //   sizesList: [{
-          //     cond: 'max-width: 767px',
-          //     size: ''
-          //   }]
-          // }]
+          sizes: [{
+            selector: '.front img',
+            sizeList: [{
+              cond: 'max-width: 767px',
+              size: '95vw'
+            },{
+              cond: 'max-width: 991px',
+              size: '720px'
+            },{
+              cond: 'max-width: 1199px',
+              size: '940px'
+            },
+            {
+              cond: 'default',
+              size: '1140px'
+            }]},
+            {
+              selector: 'article img',
+              sizeList: [{
+                cond: 'max-width: 568px',
+                size: '70vw'
+              },{
+                cond: 'max-width: 767px',
+                size: '72vw'
+              },{
+                cond: 'max-width: 991px',
+                size: '345px'
+              },{
+                cond: 'max-width: 1199px',
+                size: '293px'
+              },
+              {
+                cond: 'default',
+                size: '360px'
+              }]
+            }]
         },
         files: [{
           expand: true,
@@ -141,11 +170,6 @@ module.exports = function (grunt) {
           dest: 'temp/'
         }]
       }
-      // featured: {
-      //   options: {},
-      //   files: [{}]
-      // }
-
     },
 
     watch: {
