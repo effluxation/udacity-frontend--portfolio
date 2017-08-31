@@ -70,7 +70,7 @@ module.exports = function (grunt) {
       featured: {
         options: {
           sizes: [{
-          name: 'lg-sm',
+          name: 'lg_sm',
           width: 361,
           quality: 85
           },
@@ -90,7 +90,7 @@ module.exports = function (grunt) {
           quality: 85
           },
           {
-          name: 'lg-sm',
+          name: 'lg_sm',
           width: 721,
           quality: 85,
           suffix: '_2x'
