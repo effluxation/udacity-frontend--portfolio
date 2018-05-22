@@ -1,4 +1,7 @@
-/*GENERAL*/
+@import 'normalize.css';
+@import 'base/_variables';
+@import 'base/_mixins';
+@import 'base/_global';
 
 body {
 	font-family: 'Raleway', sans-serif;
@@ -80,4 +83,3 @@ footer {
 [class*='brandico-']:link, [class*='entypo-']:link {
 	text-decoration: none;
 }
-/*# sourceMappingURL=./maps/styles.css.map */
