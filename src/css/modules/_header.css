@@ -1,0 +1,17 @@
+/* HEADER */
+
+.header {
+  &__logo {
+    max-width: 140px;
+    padding-left: 5%;
+    margin-top: 20px;
+  }
+
+  &__title {
+    font-size: 54px;
+
+    &--thin {
+      font-weight: 100;
+    }
+  }
+}

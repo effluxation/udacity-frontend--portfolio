@@ -1,0 +1,19 @@
+/* FEATURED-PROJECT */
+
+.featured-project {
+  margin-bottom: 10px;
+
+  @mixin upToLarge {
+    & img {
+      width: 76%;
+    }
+  }
+}
+
+.text-muted {
+  color: #ababab;
+}
+
+#featuredxs {
+  font-size: 25px;
+}

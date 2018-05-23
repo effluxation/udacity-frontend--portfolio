@@ -2,85 +2,9 @@
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_global';
-
-body {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
-	background-color: #DDD;
-}
-
-a {
-	color: #333;
-}
-
-a:visited, a:link, a:active {
-	color: #333;
-}
-
-a:hover {
-	color: #ababab;
-}
-
-/* HEADER */
-
-#logo {
-	max-width: 140px;
-	padding-left: 5%;
-	margin-top: 20px;
-}
-
-hr {
-	border-width: 3px;
-	border-color: #ababab;
-}
-
-.text-thin {
-	font-weight: 100;
-}
-
-.title-super {
-	font-size: 54px;
-}
-
-/* MAIN */
-
-article {
-	margin-bottom: 10px;
-}
-
-.text-muted {
-	color: #ababab;
-}
-
-#featuredxs {
-	font-size: 25px;
-}
-
-@media only screen and (max-width: 767px) {
-	article img {
-		width: 76%;
-	}
-}
-
-/*FOOTER*/
-
-footer {
-	margin: 24px 0;
-}
-
-[class*='brandico-']:before {
-  	font-family: 'brandico', sans-serif;
-  	font-size: 48px;
-  	padding: 0 10px;
-}
-
-[class*='entypo-']:before {
-  	font-family: 'entypo', sans-serif;
-  	font-size: 48px;
-  	padding: 0 10px;
-}
-
-[class*='brandico-']:link, [class*='entypo-']:link {
-	text-decoration: none;
-}
-/*# sourceMappingURL=./maps/styles.css.map */
+@import 'modules/_header';
+@import 'modules/_row';
+@import 'modules/_wrapper';
+@import 'modules/_featured-project';
+@import 'modules/_footer';
+@import 'modules/_social-icons';
