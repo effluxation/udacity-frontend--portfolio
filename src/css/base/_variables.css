@@ -2,9 +2,10 @@
 
 :root {
   /* Color variables */
-  --mainFontColor: #252525;
-  --mainBkgndColor: #f1f1f1;
-
+  --mainFontColor: #333;
+  --lightFontColor: #969191;
+  --mainBackgroundColor: #ddd;
+  --activeLinkColor: var(--lightFontColor);
   /* Size Variables */
 
   /* Misc Variables */

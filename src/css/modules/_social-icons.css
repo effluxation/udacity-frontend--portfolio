@@ -1,16 +1,32 @@
 /* SOCIAL ICONS */
 
 .social-icons {
+  &--center {
+    text-align: center;
+  }
+
+  &--t-margin {
+    margin-top: 8px;
+  }
+
   & [class*='brandico-']::before {
     font-family: 'brandico', sans-serif;
-    font-size: 48px;
+    font-size: 34px;
     padding: 0 10px;
   }
 
   & [class*='entypo-']::before {
     font-family: 'entypo', sans-serif;
-    font-size: 48px;
+    font-size: 34px;
     padding: 0 10px;
+  }
+
+  & [class*='entypo-']:visited {
+    color: var(--mainFontColor);
+  }
+
+  & [class*='entypo-']:active {
+    color: var(--activeLinkColor);
   }
 
   & [class*='brandico-']:link,

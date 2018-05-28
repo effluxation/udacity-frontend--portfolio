@@ -1,0 +1,39 @@
+/* HEADLINE */
+
+.headline {
+  line-height: 1;
+
+  &--no-b-margin {
+    margin-bottom: 0;
+  }
+
+  &--no-t-margin {
+    margin-top: 0;
+  }
+
+  &--center-text {
+    text-align: center;
+  }
+
+  &--right-text {
+    text-align: right;
+  }
+
+  &--light-text {
+    color: var(--lightFontColor);
+  }
+
+  &--center-text-xs {
+      text-align: center;
+  }
+
+  &--left-text-md {
+    @mixin downToMedium {
+      text-align: left;
+    }
+  }
+
+  &--thin {
+    font-weight: 100;
+  }
+}

@@ -1,7 +1,7 @@
 /* FOOTER */
 
 .footer {
-  &--t-b-margin {
-    margin: 24px auto;
+  &--b-margin {
+    margin: 0 auto 22px;
   }
 }

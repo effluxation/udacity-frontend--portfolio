@@ -1,3 +1,30 @@
 /* WRAPPER */
 
-.wrapper {}
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+
+  @mixin clearfix;
+
+  @mixin downToVerySmall {
+
+  }
+
+  @mixin downToSmall {
+
+  }
+
+  @mixin downToMedium {
+    width: 750px;
+  }
+
+  @mixin downToLarge {
+    width: 970px;
+  }
+
+  @mixin downToVeryLarge  {
+    width: 1170px;
+  }
+}

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -10,7 +10,6 @@
 	<!-- build:js js/vendor.min.js -->
   <script src="js/vendor.js"></script>
   <!-- /build -->
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300" rel="stylesheet">
 	<link href="http://weloveiconfonts.com/api/?family=brandico" rel="stylesheet">
 	<link href="http://weloveiconfonts.com/api/?family=entypo" rel="stylesheet">
@@ -22,72 +21,55 @@
 </head>
 <body>
 
-	<header class="header container">
+	<header class="header wrapper">
 		<div class="row">
-			<div class="col-xs-4">
+			<div class="row__column row__column--xs-3">
 				<img class="header__logo" src="img/logo.svg" alt="PSD logo">
 			</div>
-			<div class="col-xs-8 text-right text-uppercase">
-				<h1 class="header__title header__title--thin">Patrick Dorosz</h1>
-				<h4>Web Developer</h4>
+			<div class="row__column row__column--xs-9 header__headline-column header__headline-column--t-padding">
+				<h1 class="header__title headline headline--thin headline--right-text headline--no-b-margin headline--no-t-margin">PATRICK DOROSZ</h1>
+				<h4 class="header__subtitle headline headline--right-text">Web Developer</h4>
 			</div>
 		</div>
 		<hr>
 	</header>
 
-	<section class="front container">
-		<div class="row">
-			<div class="col-xs-12">
-				<img class="img-responsive" src="img/front-xs.jpg" alt="Front Image" srcset="img/front-lg.jpg 1141w, img/front-lg_2x.jpg 2281w, img/front-md.jpg 941w, img/front-md_2x.jpg 1881w, img/front-sm.jpg 721w, img/front-sm_2x.jpg 1441w, img/front-xs.jpg 541w, img/front-xs_2x.jpg 1081w" sizes="(max-width: 767px) 95vw, (max-width: 991px) 720px, (max-width: 1199px) 940px, 1140px">
+	<section class="main-section wrapper">
+		<div class="row row--l-r-padding">
+			<div class="row__column--md-12">
+				<h2 class="headline headline--light-text headline--center-text-xs headline--left-text-md main-section__headline-txt">Featured Projects</h2>
 			</div>
 		</div>
-	</section>
-
-	<section class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<h2 class="text-muted hidden-xs">Featured Work</h2>
-				<h2 id="featuredxs" class="text-muted text-center visible-xs">Featured Work</h2>
-			</div>
-		</div>
-		<div class="row text-center">
-			<article class="featured-project col-sm-6 col-md-4 center-block">
-				<img class="img-responsive center-block" src="img/featured/Cassiopeia_A-md.jpg" alt="Cassiopeia A" srcset="img/featured/Cassiopeia_A-lg_sm.jpg 361w, img/featured/Cassiopeia_A-lg_sm_2x.jpg 721w, img/featured/Cassiopeia_A-md.jpg 291w, img/featured/Cassiopeia_A-md_2x.jpg 586w, img/featured/Cassiopeia_A-xs.jpg 550w, img/featured/Cassiopeia_A-xs2.jpg 397w, img/featured/Cassiopeia_A-xs2_2x.jpg 792w, img/featured/Cassiopeia_A-xs_2x.jpg 1100w" sizes="(max-width: 568px) 70vw, (max-width: 767px) 72vw, (max-width: 991px) 345px, (max-width: 1199px) 293px, 360px">
-				<h2 class="text-uppercase">Cassiopeia A</h2>
-				<p><a target="_blank" href="https://github.com/effluxation/cassiopeia_a/">https://github.com/effluxation/cassiopeia_a/</a></p>
+			<article class="featured-project featured-project--center row__column row__column--md-6 row__column--lg-4">
+				<img class="featured-project__img featured-project--center" src="img/featured/Cassiopeia_A-md.jpg" alt="Cassiopeia A" srcset="img/featured/Cassiopeia_A-lg_sm.jpg 361w, img/featured/Cassiopeia_A-lg_sm_2x.jpg 721w, img/featured/Cassiopeia_A-md.jpg 291w, img/featured/Cassiopeia_A-md_2x.jpg 586w, img/featured/Cassiopeia_A-xs.jpg 550w, img/featured/Cassiopeia_A-xs2.jpg 397w, img/featured/Cassiopeia_A-xs2_2x.jpg 792w, img/featured/Cassiopeia_A-xs_2x.jpg 1100w" sizes="(max-width: 568px) 70vw, (max-width: 767px) 72vw, (max-width: 991px) 345px, (max-width: 1199px) 293px, 360px">
+				<h2 class="headline--center-text featured-project__headline">Museum Map Guide</h2>
+				<p class="featured-project__link-text"><a rel="noopener" target="_blank" href="https://psdcode.github.io/museum-guide/">psdcode.github.io/museum-guide</a></p>
 			</article>
-			<article class="featured-project col-sm-6 col-md-4 center-block">
-				<img class="img-responsive center-block" src="img/featured/NGC2392_EskimoNebula-md.jpg" alt="Eskimo Nebula" srcset="img/featured/NGC2392_EskimoNebula-lg_sm.jpg 361w, img/featured/NGC2392_EskimoNebula-lg_sm_2x.jpg 721w, img/featured/NGC2392_EskimoNebula-md.jpg 291w, img/featured/NGC2392_EskimoNebula-md_2x.jpg 586w, img/featured/NGC2392_EskimoNebula-xs.jpg 550w, img/featured/NGC2392_EskimoNebula-xs2.jpg 397w, img/featured/NGC2392_EskimoNebula-xs2_2x.jpg 792w, img/featured/NGC2392_EskimoNebula-xs_2x.jpg 1100w" sizes="(max-width: 568px) 70vw, (max-width: 767px) 72vw, (max-width: 991px) 345px, (max-width: 1199px) 293px, 360px">
-				<h2 class="text-uppercase">Eskimo Nebula</h2>
-				<p><a target="_blank" href="https://github.com/effluxation/eskimo_nebula/">https://github.com/effluxation/eskimo_nebula/</a></p>
+			<article class="featured-project featured-project--center row__column row__column--md-6 row__column--lg-4">
+				<img class="featured-project__img featured-project--center" src="img/featured/NGC2392_EskimoNebula-md.jpg" alt="Eskimo Nebula" srcset="img/featured/NGC2392_EskimoNebula-lg_sm.jpg 361w, img/featured/NGC2392_EskimoNebula-lg_sm_2x.jpg 721w, img/featured/NGC2392_EskimoNebula-md.jpg 291w, img/featured/NGC2392_EskimoNebula-md_2x.jpg 586w, img/featured/NGC2392_EskimoNebula-xs.jpg 550w, img/featured/NGC2392_EskimoNebula-xs2.jpg 397w, img/featured/NGC2392_EskimoNebula-xs2_2x.jpg 792w, img/featured/NGC2392_EskimoNebula-xs_2x.jpg 1100w" sizes="(max-width: 568px) 70vw, (max-width: 767px) 72vw, (max-width: 991px) 345px, (max-width: 1199px) 293px, 360px">
+				<h2 class="headline--center-text featured-project__headline">FEND Memory Game</h2>
+				<p class="featured-project__link-text"><a rel="noopener" target="_blank" href="https://psdcode.github.io/fend-memory-game/">psdcode.github.io/fend-memory-game</a></p>
 			</article>
-			<article class="featured-project col-sm-6 col-md-4 center-block">
-				<img class="img-responsive center-block" src="img/featured/NGC7293_Helix_Nebula-md.jpg" alt="Helix Nebula" srcset="img/featured/NGC7293_Helix_Nebula-lg_sm.jpg 360w, img/featured/NGC7293_Helix_Nebula-lg_sm_2x.jpg 721w, img/featured/NGC7293_Helix_Nebula-md.jpg 291w, img/featured/NGC7293_Helix_Nebula-md_2x.jpg 587w, img/featured/NGC7293_Helix_Nebula-xs.jpg 550w, img/featured/NGC7293_Helix_Nebula-xs2.jpg 397w, img/featured/NGC7293_Helix_Nebula-xs2_2x.jpg 793w, img/featured/NGC7293_Helix_Nebula-xs_2x.jpg 1099w" sizes="(max-width: 568px) 70vw, (max-width: 767px) 72vw, (max-width: 991px) 345px, (max-width: 1199px) 293px, 360px">
-				<h2 class="text-uppercase">Helix Nebula</h2>
-				<p><a target="_blank" href="https://github.com/effluxation/helix_nebula/">https://github.com/effluxation/helix_nebula/</a></p>
+			<article class="featured-project featured-project--center row__column row__column--md-6 row__column--lg-4">
+				<img class="featured-project__img featured-project--center" src="img/featured/NGC7293_Helix_Nebula-md.jpg" alt="Helix Nebula" srcset="img/featured/NGC7293_Helix_Nebula-lg_sm.jpg 360w, img/featured/NGC7293_Helix_Nebula-lg_sm_2x.jpg 721w, img/featured/NGC7293_Helix_Nebula-md.jpg 291w, img/featured/NGC7293_Helix_Nebula-md_2x.jpg 587w, img/featured/NGC7293_Helix_Nebula-xs.jpg 550w, img/featured/NGC7293_Helix_Nebula-xs2.jpg 397w, img/featured/NGC7293_Helix_Nebula-xs2_2x.jpg 793w, img/featured/NGC7293_Helix_Nebula-xs_2x.jpg 1099w" sizes="(max-width: 568px) 70vw, (max-width: 767px) 72vw, (max-width: 991px) 345px, (max-width: 1199px) 293px, 360px">
+				<h2 class="headline--center-text featured-project__headline">Client Wix Project</h2>
+				<p class="featured-project__link-text"><a rel="noopener" target="_blank" href="https://www.peertopeers.net/">www.peertopeers.net</a></p>
 			</article>
-			<article class="featured-project col-sm-6 col-md-4 center-block">
-				<img class="img-responsive center-block" src="img/featured/RS_Puppis-md.jpg" alt="RS Puppis" srcset="img/featured/RS_Puppis-lg_sm.jpg 361w, img/featured/RS_Puppis-lg_sm_2x.jpg 721w, img/featured/RS_Puppis-md.jpg 291w, img/featured/RS_Puppis-md_2x.jpg 586w, img/featured/RS_Puppis-xs.jpg 550w, img/featured/RS_Puppis-xs2.jpg 397w, img/featured/RS_Puppis-xs2_2x.jpg 793w, img/featured/RS_Puppis-xs_2x.jpg 1100w" sizes="(max-width: 568px) 70vw, (max-width: 767px) 72vw, (max-width: 991px) 345px, (max-width: 1199px) 293px, 360px">
-				<h2 class="text-uppercase">RS Puppis</h2>
-				<p><a target="_blank" href="https://github.com/effluxation/rs_puppis/">https://github.com/effluxation/rs_puppis/</a></p>
+			<article class="featured-project featured-project--center featured-project--placeholder row__column row__column--lg-4">
 			</article>
-			<div class="clearfix visible-sm"></div>
-			<article class="featured-project col-sm-6 col-md-4 center-block">
-				<img class="img-responsive center-block" src="img/featured/V838_Monocerotis-md.jpg" alt="V838 Monocerotis" srcset="img/featured/V838_Monocerotis-lg_sm.jpg 361w, img/featured/V838_Monocerotis-lg_sm_2x.jpg 721w, img/featured/V838_Monocerotis-md.jpg 291w, img/featured/V838_Monocerotis-md_2x.jpg 587w, img/featured/V838_Monocerotis-xs.jpg 550w, img/featured/V838_Monocerotis-xs2.jpg 397w, img/featured/V838_Monocerotis-xs2_2x.jpg 793w, img/featured/V838_Monocerotis-xs_2x.jpg 1100w" sizes="(max-width: 568px) 70vw, (max-width: 767px) 72vw, (max-width: 991px) 345px, (max-width: 1199px) 293px, 360px">
-				<h2 class="text-uppercase">V838 Monocerotis</h2>
-				<p><a target="_blank" href="https://github.com/effluxation/v838/">https://github.com/effluxation/v838/</a></p>
-			</article>
-			<article class="featured-project col-sm-6 col-md-4 center-block">
-				<img class="img-responsive center-block" src="img/featured/TychoSN-md.jpg" alt="Tycho's Supernova" srcset="img/featured/TychoSN-lg_sm.jpg 361w, img/featured/TychoSN-lg_sm_2x.jpg 721w, img/featured/TychoSN-md.jpg 291w, img/featured/TychoSN-md_2x.jpg 586w, img/featured/TychoSN-xs.jpg 550w, img/featured/TychoSN-xs2.jpg 397w, img/featured/TychoSN-xs2_2x.jpg 792w, img/featured/TychoSN-xs_2x.jpg 1100w" sizes="(max-width: 568px) 70vw, (max-width: 767px) 72vw, (max-width: 991px) 345px, (max-width: 1199px) 293px, 360px">
-				<h2 class="text-uppercase">Tycho's Supernova</h2>
-				<p><a target="_blank" href="https://github.com/effluxation/tychos_sn/">https://github.com/effluxation/tychos_sn/</a></p>
+			<article class="featured-project featured-project--center row__column row__column--md-6 row__column--lg-4">
+				<img class="featured-project__img featured-project--center" src="img/featured/RS_Puppis-md.jpg" alt="RS Puppis" srcset="img/featured/RS_Puppis-lg_sm.jpg 361w, img/featured/RS_Puppis-lg_sm_2x.jpg 721w, img/featured/RS_Puppis-md.jpg 291w, img/featured/RS_Puppis-md_2x.jpg 586w, img/featured/RS_Puppis-xs.jpg 550w, img/featured/RS_Puppis-xs2.jpg 397w, img/featured/RS_Puppis-xs2_2x.jpg 793w, img/featured/RS_Puppis-xs_2x.jpg 1100w" sizes="(max-width: 568px) 70vw, (max-width: 767px) 72vw, (max-width: 991px) 345px, (max-width: 1199px) 293px, 360px">
+				<h2 class="headline--center-text featured-project__headline">FEND Arcade Game</h2>
+				<p class="featured-project__link-text"><a rel="noopener" target="_blank" href="https://psdcode.github.io/fend-arcade-game/">psdcode.github.io/fend-arcade-game</a></p>
 			</article>
 		</div>
 	</section>
 
-	<footer class="footer footer--t-b-margin container">
+	<footer class="footer footer--b-margin wrapper">
+		<hr>
 		<div class="row">
-			<div class="col-xs-12 text-center social-icons">
+			<div class="row__column-xs-12 social-icons social-icons--center social-icons--t-margin">
 				<a href="https://twitter.com" target="_blank" class="brandico-twitter-bird" rel="noopener"></a>
 				<a href="https://github.com/psdcode" target="_blank" class="brandico-github" rel="noopener"></a>
 				<a href="mailto:patrick.dorosz@gmail.com" class="entypo-mail" rel="noopener"></a>
@@ -95,10 +77,12 @@
 		</div>
 	</footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!-- build:js js/main.min.js -->
 	<script src="js/main.js"></script>
 	<!-- /build -->
+	<!-- build:remove -->
+  <script src="http://localhost:35729/livereload.js"></script>
+  <!-- /build -->
+
 </body>
 </html>

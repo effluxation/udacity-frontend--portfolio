@@ -1,19 +1,37 @@
 /* FEATURED-PROJECT */
 
 .featured-project {
-  margin-bottom: 10px;
+	padding-bottom: 6px;
 
-  @mixin upToLarge {
-    & img {
-      width: 76%;
-    }
+	&__img {
+		max-width: 100%;
+		height: auto;
+
+		@mixin upToMedium {
+	      width: 76%;
+	  }
+	}
+
+  &--center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
-}
 
-.text-muted {
-  color: #ababab;
-}
+  &__headline {
+		margin: 8px 0 4px;
+		line-height: 1.1;
+    font-size: 27px;
+  }
 
-#featuredxs {
-  font-size: 25px;
+  &__link-text {
+		margin: 0 0 10px;
+		line-height: 1.2;
+    font-size: 15px;
+    text-align: center;
+  }
+
+	&--placeholder {
+		padding-bottom: 0;
+	}
 }

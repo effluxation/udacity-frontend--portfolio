@@ -1,31 +1,40 @@
 /* MIXINS */
 
-@define-mixin downToVeryVerySmall {
-  @media (min-width: 330px) {
-    @mixin-content;
+@define-mixin clearfix {
+  &::after,
+  &::before {
+    content: '';
+    display: table;
+    clear: both;
   }
 }
 
 @define-mixin downToVerySmall {
-  @media (min-width: 386px) {
+  @media (min-width: 320px) {
     @mixin-content;
   }
 }
 
 @define-mixin downToSmall {
-  @media (min-width: 550px) {
+  @media (min-width: 480px) {
     @mixin-content;
   }
 }
 
-@define-mixin upToLarge {
+@define-mixin downToMedium {
+  @media (min-width: 768px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin upToMedium {
   @media (max-width: 767px) {
     @mixin-content;
   }
 }
 
 @define-mixin downToLarge {
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     @mixin-content;
   }
 }
@@ -38,12 +47,6 @@
 
 @define-mixin upToVeryLarge {
   @media (max-width: 1199px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin downToVeryVeryLarge {
-  @media (min-width: 1400px) {
     @mixin-content;
   }
 }

@@ -371,7 +371,7 @@ module.exports = function (grunt) {
 
     watch: {
       reload: {
-        files: [paths.prodDirCss + '**/*.css'],
+        files: [paths.prodDirCss + 'styles.css'],
         tasks: [],
         options: {
           livereload: true
