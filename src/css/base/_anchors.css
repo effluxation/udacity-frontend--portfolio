@@ -1,0 +1,12 @@
+/* ANCHORS */
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: var(--mainFontColor);
+}
+
+a:active {
+  color: var(--activeLinkColor);
+}

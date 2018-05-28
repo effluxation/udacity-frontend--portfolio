@@ -2,9 +2,12 @@
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_global';
+@import 'base/_anchors';
 @import 'modules/_header';
 @import 'modules/_row';
 @import 'modules/_wrapper';
 @import 'modules/_featured-project';
 @import 'modules/_footer';
 @import 'modules/_social-icons';
+@import 'modules/_headline';
+@import 'modules/_main-section';
