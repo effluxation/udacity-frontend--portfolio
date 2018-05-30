@@ -1,44 +1,44 @@
 /* HEADER */
 
 .header {
-	&__headline-column {
-		height: 170px;
+  &__headline-column {
+    height: 170px;
 
-		&--t-padding {
-	    padding-top: 36px;
-	  }
-	}
+    &--t-padding {
+      padding-top: 36px;
+    }
+  }
 
   &__logo {
-    width: 121px;
+    width: 123px;
     padding-left: 0;
-    margin-top: 20px;
+    margin-top: 18px;
 
-		/* @mixin downToMedium {
-			margin-top: 20px;
-			width: 120px;
-		} */
+    /* @mixin downToMedium {
+      margin-top: 20px;
+      width: 120px;
+    } */
   }
 
   &__title {
     font-size: 48px;
-		height: 96px;
+    height: 96px;
 
-		@media (min-width: 675px) {
-			font-size: 48px;
-		}
+    @media (min-width: 675px) {
+      font-size: 48px;
+    }
 
-		@mixin downToMedium {
-			font-size: 54px;
-		}
+    @mixin downToMedium {
+      font-size: 54px;
+    }
   }
 
-	&__subtitle {
-		margin: 10px 0;
-		font-size: 20px;
+  &__subtitle {
+    margin: 10px 0;
+    font-size: 20px;
 
-		@mixin downToMedium {
-			font-size: 23px;
-		}
-	}
+    @mixin downToMedium {
+      font-size: 23px;
+    }
+  }
 }

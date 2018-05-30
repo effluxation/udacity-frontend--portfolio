@@ -24,7 +24,7 @@
     width: 970px;
   }
 
-  @mixin downToVeryLarge  {
+  @mixin downToVeryLarge {
     width: 1170px;
   }
 }

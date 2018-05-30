@@ -1,16 +1,16 @@
 /* FEATURED-PROJECT */
 
 .featured-project {
-	padding-bottom: 6px;
+  padding-bottom: 6px;
 
-	&__img {
-		max-width: 100%;
-		height: auto;
+  &__img {
+    max-width: 100%;
+    height: auto;
 
-		@mixin upToMedium {
-	      width: 76%;
-	  }
-	}
+    @mixin upToMedium {
+      width: 76%;
+    }
+  }
 
   &--center {
     display: block;
@@ -19,19 +19,19 @@
   }
 
   &__headline {
-		margin: 8px 0 4px;
-		line-height: 1.1;
+    margin: 8px 0 4px;
+    line-height: 1.1;
     font-size: 27px;
   }
 
   &__link-text {
-		margin: 0 0 10px;
-		line-height: 1.2;
+    margin: 0 0 10px;
+    line-height: 1.2;
     font-size: 15px;
     text-align: center;
   }
 
-	&--placeholder {
-		padding-bottom: 0;
-	}
+  &--placeholder {
+    padding-bottom: 0;
+  }
 }

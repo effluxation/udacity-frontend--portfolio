@@ -1,20 +1,19 @@
 /* GLOBAL */
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-	color: var(--mainFontColor);
+  color: var(--mainFontColor);
   background-color: var(--mainBackgroundColor);
-	line-height: 1.4;
+  line-height: 1.4;
 }
 
 hr {
-	margin: 7px 0;
-	border: 0;
+  margin: 7px 0;
+  border: 0;
   border-top: 1px solid var(--mainFontColor);
-  /* border-color: #eee; */
 }
