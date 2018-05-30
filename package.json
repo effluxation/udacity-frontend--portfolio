@@ -1,18 +1,19 @@
 {
-  "name": "portfolio--projects",
+  "name": "projects--portfolio",
   "version": "1.0.0",
-  "description": "Portfolio & Projects",
+  "description": "Patrick Dorosz: Projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/psdcode/portfolio--projects.git"
+    "url": "git+https://github.com/psdcode/projects--portfolio"
   },
   "keywords": [
     "portfolio",
-    "projects"
+    "projects",
+    "javascript"
   ],
   "author": "Patrick Dorosz",
   "license": "ISC",

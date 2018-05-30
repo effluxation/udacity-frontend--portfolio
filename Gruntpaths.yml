@@ -1,7 +1,7 @@
 srcDir: src/
 srcDirJs: src/scripts/
 srcDirCss: src/css/
-prodDir: docs/
-prodDirJs: docs/scripts/
-prodDirCss: docs/css/
+prodDir: psdcode.github.io/
+prodDirJs: psdcode.github.io/scripts/
+prodDirCss: psdcode.github.io/css/
 tempDir: temp/
