@@ -2,10 +2,19 @@
 
 .featured-project {
   padding-bottom: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out;
+
+  &--visible {
+    opacity: 1;
+    visibility: visible;
+  }
 
   &__img {
     max-width: 100%;
     height: auto;
+    border: 1px solid var(--mainFontColor);
 
     @mixin upToMedium {
       width: 76%;
@@ -21,7 +30,19 @@
   &__headline {
     margin: 8px 0 4px;
     line-height: 1.1;
-    font-size: 27px;
+    font-size: 22px;
+
+    @mixin downToSmall {
+      font-size: 27px;
+    }
+
+    @mixin downToLarge {
+      font-size: 22px;
+    }
+
+    @mixin downToVeryLarge {
+      font-size: 27px;
+    }
   }
 
   &__link-text {

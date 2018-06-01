@@ -23,14 +23,8 @@
     color: var(--lightFontColor);
   }
 
-  &--center-text-xs {
-    text-align: center;
-  }
-
-  &--left-text-md {
-    @mixin downToMedium {
-      text-align: left;
-    }
+  &--left-text {
+    text-align: left;
   }
 
   &--thin {
