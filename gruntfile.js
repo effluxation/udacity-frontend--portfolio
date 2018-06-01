@@ -9,29 +9,24 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: paths.srcDir,
-          src: ['img/**/*'],
+          src: ['img/*', 'LICENSE', 'README.md'],
           dest: paths.prodDir
         }]
       },
       tempImg: {
-        // files: [{
-        //   expand: true,
-        //   flatten: true,
-        //   src: ['temp/img/model/d_im/*.jpg'],
-        //   dest: paths.prodDir + 'img/model/'
-        // }, {
-        //   expand: true,
-        //   flatten: true,
-        //   src: ['temp/img/*.{jpg,png}'],
-        //   dest: paths.prodDir + 'img/'
-        // }]
+        files: [{
+          expand: true,
+          flatten: true,
+          src: ['temp/img/projects/resp/*'],
+          dest: paths.prodDir + 'img/projects/'
+        }]
       },
       dev: {
         files: [{
           expand: true,
           cwd: paths.srcDir,
           src: [
-            'img/**/*',
+            'img/*',
             'index.html'
           ],
           dest: paths.prodDir
@@ -42,6 +37,9 @@ module.exports = function (grunt) {
     clean: {
       prebuild: {
         src: [paths.prodDir + '*']
+      },
+      tempImg: {
+        src: ['temp/img/']
       },
       postuglify: {
         src: [
@@ -59,6 +57,25 @@ module.exports = function (grunt) {
           ]
         }]
       }
+    },
+
+    imagemin: {
+      projects: {
+        files: [{
+          expand: true,
+          flatten: true,
+          src: paths.srcDir + 'img/projects/*.jpg',
+          dest: 'temp/img/projects/imagemin/'
+        }]
+      }// ,
+      // modal: {
+      //   files: [{
+      //     expand: true,
+      //     flatten: true,
+      //     src: 'src/img/*.{jpg,png}',
+      //     dest: 'temp/img/'
+      //   }]
+      // }
     },
 
     jshint: {
@@ -142,11 +159,6 @@ module.exports = function (grunt) {
       projects: {
         options: {
           sizes: [{
-            name: 'lg_sm',
-            width: 361,
-            quality: 85
-          },
-          {
             name: 'md',
             width: 291,
             quality: 85
@@ -157,15 +169,9 @@ module.exports = function (grunt) {
             quality: 85
           },
           {
-            name: 'xs2',
+            name: 'xs2_sm_lg',
             width: 397,
             quality: 85
-          },
-          {
-            name: 'lg_sm',
-            width: 721,
-            quality: 85,
-            suffix: '_2x'
           },
           {
             name: 'md',
@@ -180,7 +186,7 @@ module.exports = function (grunt) {
             suffix: '_2x'
           },
           {
-            name: 'xs2',
+            name: 'xs2_sm_lg',
             width: 793,
             quality: 85,
             suffix: '_2x'
@@ -189,8 +195,8 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           flatten: true,
-          src: ['img_src/projects/*.jpg'],
-          dest: 'img/projects/'
+          src: ['temp/img/projects/imagemin/*.*'],
+          dest: 'temp/img/projects/resp/'
         }]
       }
     },
@@ -200,26 +206,7 @@ module.exports = function (grunt) {
         options: {
           srcAttribute: 'smallest',
           sizes: [{
-            selector: '.front img',
-            sizeList: [{
-              cond: 'max-width: 767px',
-              size: '95vw'
-            },
-            {
-              cond: 'max-width: 991px',
-              size: '720px'
-            },
-            {
-              cond: 'max-width: 1199px',
-              size: '940px'
-            },
-            {
-              cond: 'default',
-              size: '1140px'
-            }]
-          },
-          {
-            selector: 'article img',
+            selector: '.featured-project__img',
             sizeList: [{
               cond: 'max-width: 568px',
               size: '70vw'
@@ -244,8 +231,9 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
-          src: ['index.html'],
-          dest: 'temp/'
+          flatten: true,
+          src: paths.prodDir + 'index.html',
+          dest: paths.prodDir
         }]
       }
     },
@@ -259,14 +247,7 @@ module.exports = function (grunt) {
             presets: [['env', { 'modules': false }]],
             plugins: ['external-helpers']
           }),
-          require('rollup-plugin-node-resolve')({ jsnext: true })// ,
-          // Note: latest 9.1.0 version of rollup-plugin-commonjs gives error, rolled back to 8.4.1 and works
-          // require('rollup-plugin-commonjs')({
-          //   sourceMap: false
-          // }),
-          // require('rollup-plugin-json')({
-          //   exclude: 'node_modules/**'
-          // })
+          require('rollup-plugin-node-resolve')({ jsnext: true })
         ]
       },
       app: {
@@ -341,7 +322,7 @@ module.exports = function (grunt) {
     'stylelint',
     'clean:prebuild',
     'copy:prod',
-    // 'copy:tempImg',
+    'copy:tempImg',
     'rollup:app',
     'postcss:prod',
     'modernizr',
@@ -350,15 +331,28 @@ module.exports = function (grunt) {
     'clean:postuglify',
     'processhtml',
     'filerev',
-    'usemin'
+    'usemin',
+    'responsive_images_extender'
   ]);
 
   grunt.registerTask('dev', [
     'clean:prebuild',
     'copy:dev',
+    'copy:tempImg',
     'rollup',
-    'postcss:dev'
+    'postcss:dev',
+    'responsive_images_extender'
   ]);
 
-  grunt.registerTask('imgProcess', []);
+  grunt.registerTask('imgProcess', [
+    'clean:tempImg',
+    'imagemin',
+    'responsive_images'
+  ]);
+
+  grunt.registerTask('fullProd', [
+    'imgProcess',
+    'prod',
+    'clean:tempImg'
+  ]);
 };
