@@ -11,13 +11,13 @@
 
   & [class*='brandico-']::before {
     font-family: 'brandico', sans-serif;
-    font-size: 34px;
+    font-size: 32px;
     padding: 0 10px;
   }
 
   & [class*='entypo-']::before {
     font-family: 'entypo', sans-serif;
-    font-size: 34px;
+    font-size: 32px;
     padding: 0 10px;
   }
 
