@@ -6,7 +6,7 @@
   }
 
   &--t-margin {
-    margin-top: 8px;
+    margin-top: 3px;
   }
 
   & [class*='brandico-']::before {

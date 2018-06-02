@@ -1,14 +1,38 @@
 /* FEATURED-PROJECT */
 
 .featured-project {
-  padding-bottom: 6px;
+  padding-bottom: 10px;
+  text-align: center;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out;
 
+  @mixin downToMedium {
+    height: 293px;
+  }
+
+  @mixin downToLarge {
+    height: 252px;
+  }
+
+  @mixin downToVeryLarge {
+    height: 302px;
+  }
+
   &--visible {
     opacity: 1;
     visibility: visible;
+  }
+
+  &--placeholder {
+    visibility: 0;
+    padding-bottom: 0;
+  }
+
+  &--center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   &__img {
@@ -21,14 +45,8 @@
     }
   }
 
-  &--center {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   &__headline {
-    margin: 8px 0 4px;
+    margin: 7px 0 2px;
     line-height: 1.1;
     font-size: 22px;
 
@@ -45,14 +63,58 @@
     }
   }
 
-  &__link-text {
-    margin: 0 0 10px;
-    line-height: 1.2;
+  &__github-plus {
+    font-weight: 600;
+    font-family: sans-serif;
     font-size: 15px;
-    text-align: center;
+
+    @mixin downToSmall {
+      font-size: 18px;
+    }
+
+    @mixin downToLarge {
+      font-size: 16px;
+    }
+
+    @mixin downToVeryLarge {
+      font-size: 18px;
+    }
   }
 
-  &--placeholder {
-    padding-bottom: 0;
+  &__link-text {
+    display: inline-block;
+    margin: 6px 0 0;
+    line-height: 1.2;
+    font-size: 14px;
+    text-align: center;
+
+    @mixin downToSmall {
+      font-size: 16px;
+    }
+
+    @mixin downToLarge {
+      font-size: 13px;
+    }
+
+    @mixin downToVeryLarge {
+      font-size: 16px;
+    }
+  }
+
+  &__github-link::before {
+    font-family: 'brandico', sans-serif;
+    font-size: 18px;
+
+    @mixin downToSmall {
+      font-size: 20px;
+    }
+
+    @mixin downToLarge {
+      font-size: 18px;
+    }
+
+    @mixin downToVeryLarge {
+      font-size: 20px;
+    }
   }
 }

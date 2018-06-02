@@ -8,10 +8,6 @@
 
   @mixin clearfix;
 
-  /* @mixin downToVerySmall {} */
-
-  /* @mixin downToSmall {} */
-
   @mixin downToMedium {
     width: 750px;
   }
