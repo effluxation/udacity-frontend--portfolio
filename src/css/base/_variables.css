@@ -3,9 +3,7 @@
 :root {
   /* Color variables */
   --mainFontColor: #333;
-  --lightFontColor: #969191;
+  --lightFontColor: #cfcbcb;
   --mainBackgroundColor: linear-gradient(315deg, #ddd, #4a4a4a);
   --activeLinkColor: var(--lightFontColor);
-  /* Size Variables */
-  /* Misc Variables */
 }
