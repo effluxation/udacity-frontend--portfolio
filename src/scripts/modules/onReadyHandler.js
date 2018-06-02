@@ -2,10 +2,14 @@
 
 const makeProjectsVisible = function () {
   const projects = document.getElementsByClassName('featured-project');
+  let count = 0;
   [...projects].forEach(function (project, index) {
-    setTimeout(function () {
-      project.classList.add('featured-project--visible');
-    }, index * 120);
+    if (!project.classList.contains('featured-project--placeholder')) {
+      setTimeout(function () {
+        project.classList.add('featured-project--visible');
+      }, count * 120);
+      count += 1;
+    }
   });
 };
 
