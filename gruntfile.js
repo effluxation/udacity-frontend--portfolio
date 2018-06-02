@@ -67,15 +67,7 @@ module.exports = function (grunt) {
           src: paths.srcDir + 'img/projects/*.jpg',
           dest: 'temp/img/projects/imagemin/'
         }]
-      }// ,
-      // modal: {
-      //   files: [{
-      //     expand: true,
-      //     flatten: true,
-      //     src: 'src/img/*.{jpg,png}',
-      //     dest: 'temp/img/'
-      //   }]
-      // }
+      }
     },
 
     jshint: {
