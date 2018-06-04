@@ -49,6 +49,7 @@
     margin: 7px 0 2px;
     line-height: 1.1;
     font-size: 1.375rem;
+    font-weight: var(--headlineFontWeight);
 
     @mixin downToSmall {
       font-size: 1.6875rem;
