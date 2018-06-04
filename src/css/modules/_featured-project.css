@@ -103,18 +103,18 @@
 
   &__github-link::before {
     font-family: 'brandico', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
 
     @mixin downToSmall {
-      font-size: 20px;
+      font-size: 27px;
     }
 
     @mixin downToLarge {
-      font-size: 18px;
+      font-size: 22px;
     }
 
     @mixin downToVeryLarge {
-      font-size: 20px;
+      font-size: 27px;
     }
   }
 }

@@ -1,0 +1,49 @@
+/* Icon font from fontello.com. See FONT_LICENSE.txt */
+
+@font-face {
+  font-family: 'fontello';
+  src: url('./font/fontello.eot?17211061');
+  src:
+    url('./font/fontello.eot?17211061#iefix') format('embedded-opentype'),
+    url('./font/fontello.woff2?17211061') format('woff2'),
+    url('./font/fontello.woff?17211061') format('woff'),
+    url('./font/fontello.ttf?17211061') format('truetype'),
+    url('./font/fontello.svg?17211061#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='icon-']::before,
+[class*=' icon-']::before {
+  font-family: 'fontello', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  text-align: center;
+
+  /* For safety - reset parent styles, that can break glyph codes */
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail::before {
+  content: '\e800';
+}
+
+.icon-github::before {
+  content: '\f300';
+}
+
+.icon-twitter::before {
+  content: '\f309';
+}

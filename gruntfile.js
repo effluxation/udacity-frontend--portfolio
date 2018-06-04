@@ -9,7 +9,12 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: paths.srcDir,
-          src: ['img/*', 'LICENSE', 'README.md'],
+          src: [
+            'img/*',
+            'LICENSE',
+            'README.md',
+            'css/font/*'
+          ],
           dest: paths.prodDir
         }]
       },
@@ -27,7 +32,8 @@ module.exports = function (grunt) {
           cwd: paths.srcDir,
           src: [
             'img/*',
-            'index.html'
+            'index.html',
+            'css/font/*'
           ],
           dest: paths.prodDir
         }]
