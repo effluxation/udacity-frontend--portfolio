@@ -12,6 +12,7 @@ module.exports = function (grunt) {
           src: [
             'img/*',
             'LICENSE',
+            'FONTS_LICENSE',
             'README.md',
             'css/font/*'
           ],
