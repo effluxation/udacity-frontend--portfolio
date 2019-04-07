@@ -2,25 +2,53 @@
 
 .header {
   &__headline-column {
-    height: 155px;
+    height: 140px;
+  }
 
-    &--t-padding {
-      padding-top: 21px;
-    }
+  &--t-margin {
+    margin-top: 20px;
   }
 
   &__logo {
-    width: 123px;
+    font-size: 2.7rem;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
     padding-left: 0;
-    margin-top: 3px;
+
+    @mixin downToMedium {
+      font-size: 3.6rem;
+    }
+
+    &--first {
+      color: var(--logoBlue);
+    }
+
+    &--second {
+      color: var(--logoGreen);
+    }
+
+    &--third {
+      color: var(--logoPurple);
+    }
+
+    &--code {
+      color: var(--logoGray);
+    }
   }
 
   &__title {
-    font-size: 3rem;
-    height: 96px;
+    font-size: 2.1rem;
+
+    @mixin downToVerySmall {
+      font-size: 2.2rem;
+    }
+
+    @mixin downToSmall {
+      font-size: 3rem;
+    }
 
     @media (min-width: 675px) {
-      font-size: 3rem;
+      font-size: 3.375rem;
     }
 
     @mixin downToMedium {
@@ -29,14 +57,22 @@
   }
 
   &__subtitle {
-    margin: 12px 0 0;
+    margin: 4px 0 0;
     letter-spacing: 0.0625rem;
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     font-weight: var(--headlineFontWeight);
 
-    @mixin downToMedium {
-      margin: 10px 0 0;
+    @mixin downToSmall {
+      font-size: 1.25rem;
+    }
+
+    @media (min-width: 675px) {
+      margin: 2px 0 0;
       font-size: 1.4375rem;
+    }
+
+    @mixin downToLarge {
+      margin: 10px 0 0;
     }
   }
 }

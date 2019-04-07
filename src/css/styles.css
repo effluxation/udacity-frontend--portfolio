@@ -1,6 +1,7 @@
 @import 'normalize.css';
 @import 'base/_variables';
 @import 'base/_mixins';
+@import 'base/_flex';
 @import 'base/_global';
 @import 'base/_anchors';
 @import 'modules/_header';
@@ -11,4 +12,4 @@
 @import 'modules/_social-icons';
 @import 'modules/_headline';
 @import 'modules/_main-section';
-@import 'modules/_fontello';
+@import 'modules/_fonts';

@@ -2,10 +2,18 @@
 
 :root {
   /* Color variables */
-  --mainFontColor: #333;
-  --lightFontColor: #cfcbcb;
-  --mainBackgroundColor: linear-gradient(315deg, #ddd, #4a4a4a);
-  --activeLinkColor: var(--lightFontColor);
+  --mainFontColor: #abb2be;
+  --mainBackgroundColor: #282c33;
+  --activeLinkColor: purple;
+
+  /* Heading Logo color vars */
+  --logoRed: #e06773;
+  --logoPurple: #c978d7;
+  --logoBlue: #60b0ea;
+  --logoGray: #abb2be;
+  --logoBackground: #282c33;
+  --logoGreen: #95c381;
+  --logoYellow: #d2996c;
 
   /* Size Variables */
   --headlineFontWeight: 400;
