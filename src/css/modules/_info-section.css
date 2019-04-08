@@ -1,0 +1,14 @@
+/* INFO SECTION */
+
+.info-section {
+  padding: 0 16px 0;
+
+  &__text {
+    font-size: 1rem;
+    padding: 0 16px 0;
+  }
+
+  &__text--padding-l-r {
+    padding: 0 16px 0;
+  }
+}
